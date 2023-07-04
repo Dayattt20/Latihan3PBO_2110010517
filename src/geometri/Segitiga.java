@@ -1,21 +1,19 @@
 package geometri;
 
 public class Segitiga {
-    private double alas;
-    private double tinggi;
-    private double sisimiring;
-
-    public Segitiga(double keliling, double luas {
-        this. keliling = Keliling;
-        this. luas = luas;
+    double alas, tinggi, sisimiring;
+   
+   public Segitiga (double alas, double tinggi, double sisimiring) {
+       this.alas = alas;
+       this.sisimiring = sisimiring;
+       this.tinggi = tinggi;
     }
-
-    public double luas() {
-        return alas * tinggi;
-    }
-
-    public double keliling() {
-        return alas + tinggi + sisimiring;
-    }
-}  
-
+   
+   double setLuas(){
+       return 0.5 * alas * tinggi;
+   }
+   
+   double setKeliling() {
+       return alas + tinggi + sisimiring; 
+   }
+}
